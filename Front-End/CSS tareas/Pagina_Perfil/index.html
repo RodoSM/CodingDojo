@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="nav-title" onclick="aumentar_clicks()">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#" onclick="cambiar_texto(this)">Home</a></li>
+                <li><a href="#" onclick="cambiar_texto(this)">My Profile</a></li>
+                <li><a href="#" onclick="cambiar_texto(this)">Find Connections</a></li>
+                <li><button class="btn" onclick="alerta()">Sign Out</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="full-body">
+        <main>
+            <article>
+                <div class="tarjeta">
+                    <div class="top-part">
+                        <img onmouseover="cambia_imagen(this)" onmouseout="regresa_imagen(this)" src="icons/user-circle.png" alt="user-circle" class="profile">
+                        <div class="circle"></div>
+                        <div class="circle-2"></div>
+                    </div>
+                    <section class="bottom-part">
+                        <input type="text" id="input_nombre" placeholder="Escribe aquí tu nombre">
+                        <h1 id="nombre">
+                            Jane Doe
+                        </h1>
+                        <h3 class="location">
+                            <img src="icons/map-marker.png" alt="map-marker" class="icon"> Seattle
+                        </h3>
+                        <p>
+                            Developer | Engineer | Problem Solver 
+                            Master of shadows and the Internet!
+                        </p>
+                        <p>
+                            <img src="icons/gear.png" alt="gear"  class="icon"> <a href="#" onclick="editar_perfil()">edit profile</a>
+                        </p>
+                    </section>   
+                </div>
+            </article>
+            <article>
+                <div class="info-top">
+                    <p onclick="cambio_education(this)">Education</p>
+                </div>
+                <div class="info-bottom">
+                        <h2>
+                            Coding Dojo - Full Stack Bootcamp
+                        </h2>
+                        <h4>
+                            Dec 2019 - Mar 2020
+                        </h4>
+                        <h3>
+                            Triple black belt in Python, MERN and C# ... 
+                        </h3>
+                </div>
+            </article>
+        </main>
+        <aside>
+            <section class="connection-requests">
+                <div class="top">
+                    <p class="circle"> 2 </p>
+                    <p> Connection Requests</p>
+                </div>
+                <div class="bottom">
+                    <div class="friends">    
+                        <div class="name">
+                            <img src="images/todd-s.jpg" alt="Todd" class="picture"> Todd E.
+                        </div>    
+                        <div>    
+                            <img src="icons/accept-circle.png" alt="accpt" class="icon-2"> <img src="icons/close-circle.png" alt="close" class="icon-2" ondblclick="eliminar(this)">
+                        </div>
+                    </div>
+                    <div class="friends">
+                        <div class="name">
+                            <img src="images/phil-s.jpg" alt="Phil" class="picture"> Phil K.
+                        </div>    
+                        <div>    
+                            <img src="icons/accept-circle.png" alt="accpt" class="icon-2"> <img src="icons/close-circle.png" alt="close" class="icon-2">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="your-connections">
+                <div class="top">
+                    <p class="circle-2"> 500+ </p>
+                    <p>Your Connections</p>
+                </div>
+                <div class="bottom">
+                    <div class="friends">    
+                        <div class="name">
+                            <img src="images/adrien-s.jpg" alt="Adrien" class="picture"> Adrien D.
+                        </div>    
+                    </div>
+                    <div class="friends">
+                        <div class="name">
+                            <img src="images/anne-s.jpg" alt="Anne" class="picture"> Anne J.
+                        </div>    
+                    </div>
+                    <div class="friends">    
+                        <div class="name">
+                            <img src="images/alayne-s.jpg" alt="Alayne" class="picture"> Alayne T.
+                        </div>    
+                    </div>
+                    <div class="friends">
+                        <div class="name">
+                            <img src="images/arry-s.jpg" alt="Arry" class="picture"> Arry Y.
+                        </div>    
+                    </div>
+                </div>
+                <div class="third">
+                    <a href="#">View More</a>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <script src="js/script.js"></script>
+
+    <div class="block" onmouseover="over(this)" onmouseout="out(this)"></div>
+</body>
+</html>

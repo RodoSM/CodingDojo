@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h1>Network</h1>
+        </nav>
+        <h2>Your Feed</h2>
+    </header>
+<main>
+    <aside class="aside">
+        <img src="img/user-circle.png" alt="user_icon">
+        <a href="#">Add an avatar</a>
+        <h2>james Doe</h2>
+    </aside>
+    <section id="container">
+        <section class="container">
+            <div class="row">
+                <h2>Niel M.</h2>
+                <div>
+                    <p><b id="count1">9</b> Like(s)</p>
+                    <button onclick="like1()">Like</button>
+                    <button onclick="dislike1()">Dislike</button>
+                </div>
+            </div>
+            <p>
+                I just set up this new Discord bot, let me know what you all think. <a href="#">Link</a>
+            </p>
+        </section>
+        <section class="container">
+            <div class="row">
+                <h2>Nichole K.</h2>
+                <div>
+                    <p><b id="count2">12</b> Like(s)</p>
+                    <button onclick="like2()">Like</button>
+                    <button onclick="dislike2()">Dislike</button>
+                </div>
+            </div>
+            <p>
+                Just finished my <a href="#">next comic</a>, check it out.
+            </p>
+        </section>
+        <section class="container">
+            <div class="row">
+                <h2>Jim R.</h2>
+                <div>
+                    <p><b id="count3">9</b> Like(s)</p>
+                    <button onclick="like3()">Like</button>
+                    <button onclick="dislike3()">Dislike</button>
+                </div>
+            </div>
+            <p>
+                I can't stop listening to the <a href="#">new album</a>. who else is liking it?
+            </p>
+        </section>
+    </section>
+</main>
+<!-- script2 es otra forma de hacerlo pero debemos cambiar los [like1(),like2(),like3()] por -> like() y agregar entre los parentesis el id de cada uno. ejemplo, reemplazar like1() por like(`count1`)
+Lo mismo para dislike -->
+<script src="JavaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    border: 3px solid black;
+    height: 1500px;
+
+}
+
+.element {
+    background-color: gray;
+    padding: 10px;
+    /* position: relative; */
+    /* z-index: 1; */
+}
+
+.main-element {
+    background-color: yellow;
+    padding: 10px;
+    /*Movimiento: top, left , bottom, right */
+    /* position: static; por default: mi elemento no se mueve */
+     position: relative; /*me permite el uso de top, left... se mueve en base a la posicion original. SIN afectar el resto de los elementos */
+    /* position: absolute; se posiciona en origen de la posicion del Padre solo si el padre tiene "position: relative" e ignora el resto de los elementos */
+    /* position: fixed; no se ve afectado por el scroll e ignora los elementos alrededor */
+    /* position: sticky; va a tener la posicion original y al hacer scroll se va a mover a la posidion que se le dio . NO toma valor de left */
+    top: 20px;
+    left: 15px;
+    z-index: 1; /*Eje z, que tan adelante/atras quiero mi elemento. entre mas  alto el numero mas al frente */
+
+}
+

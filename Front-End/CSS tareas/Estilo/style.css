@@ -1,0 +1,21 @@
+*{
+    font-family: monospace;
+}
+
+h1 {
+    background-color: black;
+    padding-left: 15px;
+}
+
+h2 {
+    background-color: rebeccapurple;
+    color: antiquewhite;
+    text-align: center;
+    font-style: italic;
+}
+
+h3{
+    background-color: rgb(127, 211, 245);
+    text-align: right;
+    padding-right: 15px;
+}

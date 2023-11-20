@@ -1,0 +1,192 @@
+/* CSS cascade style sheets */
+/*
+SELECTORES BASICOS:
+
+jerarquias: ID , Clases, Etiqueta
+
+etiquetas {
+    propiedad: valor ;
+}
+
+.clase {
+    propiedad: valor;
+}
+
+#id {
+    propiedad: valor;
+}
+
+*/
+* {                 /*CSS Reset*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h2 {
+    color: blue;
+    font-size: 40px;
+}
+
+.red{
+    color: red;
+}
+
+.under{
+    text-decoration: underline;
+}
+
+#parrafo_especial {
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+
+#green { /* #id se cumple por jerarquia a .clase*/
+    color: green;
+}
+
+p strong { /* Etiqueta strong que este dentro del parrafo*/
+    text-transform: uppercase;
+}
+
+/* .red strong
+#parrafo_especial em
+.under .abc
+ */
+
+.container > p { /* con el > desendiente directo si no tiene el > se cumple para todos */
+    border: 1px dashed red;
+    border-radius: 10px;
+}
+
+.container > div > p {
+    color: gray;
+}
+
+a.red { /* aquel elemento qu es a y que tiene clase red*/
+    text-decoration: line-through ;
+}
+
+/* h2.under
+.red.under
+p.abc */
+
+input[type="text"]{
+    width: 350px;
+}
+
+input[type="number"]{
+    height: 100px;
+}
+
+textarea, input {
+    border: 3px solid magenta;
+}
+
+h3.prueba_color { /*color puede ser el nombre, hexagecimal o RBG  */
+    color:rgba(12, 100, 116, 0.74);
+    background-color: tomato;
+}
+
+#texto {
+    text-align: center; /*left, center, justify, right, etc*/
+    text-decoration:underline; /*underline, line-through, overline, none */
+    font-style: italic; /* normal o italica*/
+    font-weight: bold; /*bold , nomral, light , 100, 300 ... */
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/*tamaño*/
+.tamano {
+    background-color: gray;
+    width: 400px;
+    height: 50px;
+}
+
+/*background */
+.background {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+
+    background-color: aqua;
+    background-image: url(../img/5a8efd21b15d5c051b36902d.png);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+#box_model{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    /* margin: es el espacio entre mi elemto y el resto de la pagina: top, right, bottom, left 
+    si pongo solo 2 valores, el primero es arriba/abajo y el segundo es izq/red .Tambien, puede ser "auto" para que quede centardo   */
+    margin: 50px 15px;
+    padding: 50px 15px; /*al igual que margin, aca se pueden agregar espacios para cada direccion up,right,down,left*/
+    border: 2px dotted red; /*solid, dotted, dashed, double */
+    }
+
+    .inline {
+        display: inline;
+    }
+
+    .block {  /* me despliega el elemnto como bloque, no me deja poner nada mas en esa linea, pero si me deja tener un tamaño*/
+        display: block;
+    }
+
+    .inline-block {
+        /* me permite colocal los elementos en una sola linea y dales un tamaño especifico*/
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        vertical-align: middle;
+    }
+
+    #div1 {
+        height: 150px;
+    }
+
+    #div2 {
+        height: 300px;
+    }
+
+    #div3 {
+        height: 500px;
+    }
+
+    #box_model:hover {
+        background-color: rebeccapurple;
+        transition-duration: 1s ;
+
+    }
+
+    #container1 {
+        background-color: red;
+        border: 1px solid black;
+        width: 300px;
+        height: 200px;
+        /* display: inline-block; */
+    }
+
+    #box1 {
+        background-color: white;
+        border: 1px solid black ;
+        height: 40px;
+        width: 300px;
+        margin-top: 90px;
+        }
+
+    #box2 {
+        background-color: white;
+        border: 1px solid black;
+        height: 200px ;
+        width: 40px;
+        margin-left: 100px;
+        
+
+    }
+
+    

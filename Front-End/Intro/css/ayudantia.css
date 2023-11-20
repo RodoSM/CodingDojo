@@ -1,0 +1,11 @@
+#borde1 {
+    border: 2px dotted red;
+}
+
+#borde2 {
+    border: 5px solid  green;
+}
+
+#borde3 {
+    border: 10px double blue;
+}        

@@ -1,0 +1,78 @@
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container1 {
+    background-color: red;
+    width: 1200px;
+    height: 200px;
+    display: flex; /*se acomodan por defecto en flex-start, stretch, row */
+    /* acomodo vertical  */
+    align-items: stretch; /*stretch center flex-start flex-end*/
+    /*acomodo horizontal*/
+    justify-content: flex-start; /*flex-start, flex-end, space-between, space-around, space-evenly */
+    /* direccion*/
+    flex-direction: row; /*row, row-reverse, column, column-reverse */ 
+}
+
+/* .container1 > div */
+.s1 , .s2 , .s3 {
+    width: 200px;
+    background-color: yellow;
+}
+
+.container2 {
+    background-color: blueviolet;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+}
+
+.container2 > div {
+    background-color: white;
+    flex: 1;
+}
+
+div.section2 {
+    flex: 2;
+}
+
+div.section3 {
+    flex: 3;
+}
+/*
+flex: 1 significa que el total de elementos cubrira el total del espacio, en este caso casa div es 1/3 del total del contenedor
+*/
+
+.container3 {
+    background-color: gray;
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+
+div.rojo {
+    background-color: red;
+    height: 450px;
+    width: 450px;
+    border: 5px solid black;
+    display: flex;
+}
+
+.negro {
+    background-color: black;
+    width: 417px;
+    height: 100px;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+}

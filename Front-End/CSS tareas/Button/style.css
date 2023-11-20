@@ -1,0 +1,30 @@
+
+h2{
+    height: 28px;
+    width: 200px;
+    background-color: azure;
+    border-radius: 20px;
+    border: 2px solid; 
+    color: teal;
+    text-align: center;
+    border-color: teal;
+}
+
+h1{
+    height: 38px;
+    width: 38px;
+    background-color: teal;
+    border-radius: 50%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+button{
+    height: 38px;
+    width: 240px;
+    background-color: royalblue;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    box-shadow: 6px 6px black;
+}
