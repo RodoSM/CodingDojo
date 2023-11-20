@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <h1>
+        Programmer Name 
+    </h1>
+    <div>
+        <img src="images/programmer.jpg" height="180px" alt="Profile Picture">
+    </div>
+    <div>
+        <img src="images/github_logo.png" alt="github_logo"> <a href="http://github.com" target="_blank">My Github</a> <img src="images/linkedin_icon.png" alt="linkedin_icon"> <a href="http://linkedin.com" target="_blank">My Linkedin</a> <img src="images/email_icon.png" alt="email_icon"> <a href="my_email@gmail.com" target="_blank">My Email</a>
+    </div>
+
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+    </style>
+
+    <h2>Technologies</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Front-End</th>
+                <th>Python</th>
+                <th>JavaScript</th>
+                <th>Database</th>
+                <th>Concepts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML5</td>
+                <td>Django</td>
+                <td>Express</td>
+                <td>MySQL</td>
+                <td>AJAX</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>Flask</td>
+                <td>Mongoose</td>
+                <td>MongoDB</td>
+                <td>OOP</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td>Unittest</td>
+                <td>React</td>
+                <td></td>
+                <td>Rest</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Social Media</h2>
+        <img src="images/social_icon.png" alt="Social Media" height="100px" >
+        <div>
+            You can find me in: <a href="http//twitter.com" target="_blank">Twitter</a> <a href="http//youtube.com" target="_blank">Youtube</a> <a href="http//instagram.com" target="_blank">Instagram</a>
+        </div>
+    <H2>Contact Me</H2>
+    <form action="ruta de envio" method="post" >
+        <div>
+            <label>Nombre:</label>
+            <input type="text" name="Name:">
+            <label>Email:</label>
+            <input type="email" name="email"> 
+        </div>
+        <div>
+            <label>Message:</label>
+            <textarea name="message" cols="30" rows=""></textarea>
+        </div>
+        <div style="margin: 10px;">
+        <button>Send Message</button>
+        </div>
+    </form>
+</body>
+</html>
